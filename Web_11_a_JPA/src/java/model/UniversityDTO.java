@@ -4,7 +4,6 @@
  */
 package model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -12,7 +11,6 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "tblUniversity")
 public class UniversityDTO {
-
     @Id
     private String id;
     private String name, shortName, description;
@@ -144,4 +142,6 @@ public class UniversityDTO {
         this.status = status;
     }
     
+    
+   
 }

@@ -8,14 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-/**
- *
- * @author tungi
- */
 @Entity
 @Table(name = "tblUsers")
 public class UserDTO {
-
+    
     @Id
     private String userID;
     private String fullName;

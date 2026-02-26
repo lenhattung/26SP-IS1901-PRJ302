@@ -50,7 +50,7 @@ public class UniversityController extends HttpServlet {
         // Tim kiem
         ArrayList<UniversityDTO> list = new ArrayList<>();
         if (keywords.trim().length() > 0) {
-            list = new ArrayList(udao.filterByName(keywords));
+            list = udao.filterByName(keywords);
         }
         request.setAttribute("list", list);
         request.setAttribute("keywords", keywords);
@@ -73,7 +73,7 @@ public class UniversityController extends HttpServlet {
         UniversityDAO udao = new UniversityDAO();
         ArrayList<UniversityDTO> list = new ArrayList<>();
         if (keywords.trim().length() > 0) {
-            list = new ArrayList(udao.filterByName(keywords));
+            list = udao.filterByName(keywords);
         }
         request.setAttribute("list", list);
         request.setAttribute("keywords", keywords);
